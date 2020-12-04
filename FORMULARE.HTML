@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="formulare, formulario,lista,dados"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Thiago Silva">
+
+        <title>FORMULARIO DE TESTE</title>
+        <meta name="description" content="FORMULARIO DE TESTE HTML"/>
+    </head>
+    
+    <body style="padding: 40px;">
+        <h1 style="color: maroon; font-size: xx-large; font-weight: bolder; text-decoration: transparent;">FORMULARIO DE TESTE HTML </h1>
+        <form action="enviar dados.php" method="POST" enctype="multipart/form-data">
+            <p>
+                NOME: <input type="text" name="Nome"/>
+                SOBRENOME: <input type="text" name="Sobrenome">
+            </p>
+
+            <fieldset style="width: 1000px; border-right:;">
+                <legend style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style: italic;"> Dados do Usuario </legend>
+                <p>
+                    <legend> O que eu Sei ! </legend><br/> 
+                    <label>
+                        <input type="radio" name="opções" value="HTML"/> HTML 
+                    </label>
+
+                    <label>
+                        <input type="radio" name="opções" value="CSS"/> CSS pro
+                    </label>
+
+                    <label>
+                        <input type="radio" name="opções" value="Os Dois"/> Os Dois 
+                    </label>
+
+                    <label>
+                        <input type="radio" name="opções" value="Nenhum dos Dois"/> Nenhum dos Dois 
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                      <input type="checkbox" name="tecnology" value="eu não sei html e css">  Sou Iniciante 
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="tecnology" value="eu sei html e css moderado"> Eu sei HTML e CSS moderado
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="tecnology" value="sou avançado em HTML e CSS"> Sou avançado
+                    </label>
+
+                </p>
+
+                <p>
+                    <legend>Progamas de Desenvolvimento:</legend><br/>
+                    <select> 
+                        <option value="" selected> selecione </option>
+                        
+                        <optgroup label="Desenvolvimento"></optgroup>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JAVA">JAVA</option>
+                        </optgroup>
+
+                        <optgroup label="Programação">
+                            <option value="PHP">PHP</option> 
+                        </optgroup>
+                    </select>
+
+                </p>
+
+            </fieldset><br/>
+
+            <fieldset style="width: 1000px; border-right:;"></fieldsetstyle>
+                <legend style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style: italic;">Onde Moro ?!</legend>
+                <p>
+                    <label>
+                        Rua: <input style="width: 600px; border-right:;" type="text" name="Nome"/> CEP: <input style="width: 100px; border-right:;" type="text" name="Número"/> Nº da Casa <input style="width: 90px; border-right:;" type="text" name="Número"/><br/><br/>
+                        Cidade: <input style="width: 580px; border-right:;" type="text" name="Nome"/> Estado: <input style="width: 263px; border-right:;" type="text" name="Rua"/>
+                    
+
+                </p>
+
+                </legend>
+            </fieldset>
+
+            <p>
+                Observações<br/>
+                <textarea name="msg" cols="100" rows="10"></textarea>
+            </p>
+    
+            <input type="reset" name="Limpar" value="Limpar"/>
+            <input type="submit" name="Enviar" value="Enviar"/>
+
+        </form>
+        
+    </body>
+</html>
